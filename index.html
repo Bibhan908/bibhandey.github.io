@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibhan Dey | AI/ML Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+body{
+  font-family:'Open Sans',sans-serif;
+  background:#0A192F;
+  color:white;
+  font-size:36px; /* 24 * 1.5 */
+}
+
+h1{font-size:7.2rem} /* 4.8 * 1.5 */
+h2{font-size:4.5rem;margin-bottom:30px}
+h3{font-size:3.15rem}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:40px 100px;background:#112240;position:sticky;top:0}
+nav h2{color:#00ADB5;font-size:3.6rem}
+nav ul{display:flex;list-style:none}
+nav ul li{margin-left:50px;cursor:pointer;font-size:2.4rem}
+nav ul li:hover{color:#00ADB5}
+
+.hero{display:flex;justify-content:space-between;align-items:center;padding:180px 100px}
+.hero-text{max-width:50%}
+.hero-text h2{font-size:3.6rem}
+.hero-text p{margin:40px 0;line-height:2.4;font-size:2.4rem}
+.highlight{color:#00ADB5}
+
+.btn{padding:27px 54px;border-radius:40px;border:none;margin-right:20px;cursor:pointer;font-weight:bold;font-size:2.25rem}
+.btn-primary{background:#00ADB5;color:white}
+.btn-outline{border:4px solid #00ADB5;background:transparent;color:#00ADB5}
+.btn-outline:hover{background:#00ADB5;color:white}
+
+.hero img{
+  width:420px;
+  height:420px;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid #00ADB5;
+  box-shadow:0 0 25px rgba(0,173,181,0.6);
+  transition:0.4s;
+}
+
+.hero img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 40px rgba(0,173,181,0.9);
+}
+
+section{padding:180px 100px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:60px}
+
+.card{
+  background:#112240;
+  padding:60px;
+  border-radius:25px;
+  transition:.3s;
+  font-size:2.25rem;
+  line-height:2.4;
+}
+.card:hover{transform:translateY(-12px)}
+
+.skills{display:flex;flex-wrap:wrap;gap:25px;margin-top:40px}
+.skill{
+  background:#00ADB5;
+  padding:22px 36px;
+  border-radius:40px;
+  font-size:2.1rem;
+}
+
+.contact p{margin:25px 0;font-size:2.4rem}
+.contact i{color:#00ADB5;margin-right:10px}
+
+footer{text-align:center;padding:50px;background:#112240;font-size:2rem}
+
+.fade{opacity:0;transform:translateY(20px);transition:.6s}
+.fade.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:900px){
+  body{font-size:24px}
+  h1{font-size:4rem}
+  h2{font-size:3rem}
+  .hero{flex-direction:column;text-align:center}
+  .hero-text{max-width:100%}
+  .hero img{margin-top:30px;width:350px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Bibhan Dey</h2>
+<ul>
+<li onclick="go('home')">Home</li>
+<li onclick="go('about')">About</li>
+<li onclick="go('skills')">Skills</li>
+<li onclick="go('projects')">Projects</li>
+<li onclick="go('contact')">Contact</li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-text">
+<h1>Hi, I'm <span class="highlight">Bibhan</span></h1>
+<h2>AI/ML Engineer | Software Developer</h2>
+<p>🚀 Computer Science graduate passionate about building intelligent systems and scalable applications.</p>
+<p>👉 Turning data into insights and ideas into real-world solutions.</p>
+
+<button class="btn btn-primary" onclick="go('contact')">Hire Me</button>
+<button class="btn btn-outline" onclick="go('projects')">View Projects</button>
+
+<p style="margin-top:40px;font-size:2.4rem">
+<a href="https://www.linkedin.com/in/bibhan-dey-233114270" target="_blank">LinkedIn</a> |
+<a href="https://github.com/" target="_blank">GitHub</a>
+</p>
+</div>
+
+<img src="profile1.jpg" alt="Bibhan Dey">
+</section>
+
+<section id="about" class="fade">
+<h2>About Me</h2>
+<div class="card">
+<p>I am a B.Tech Computer Science graduate with strong knowledge in Data Structures, Algorithms, DBMS, OS, and Computer Networks. I enjoy solving complex problems and building scalable systems.</p>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<h2>Skills ⚙️</h2>
+<div class="skills">
+<span class="skill">C</span>
+<span class="skill">C++</span>
+<span class="skill">Java</span>
+<span class="skill">JavaScript</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">Machine Learning</span>
+<span class="skill">Data Analysis</span>
+<span class="skill">DBMS</span>
+<span class="skill">Operating Systems</span>
+<span class="skill">Computer Networks</span>
+</div>
+</section>
+
+<section id="projects" class="fade">
+<h2>Projects 📁</h2>
+<div class="grid">
+<div class="card">
+<h3>🌾 Precision Agriculture Prediction</h3>
+<p>ML model predicting crop outcomes using soil & environmental data.</p>
+</div>
+<div class="card">
+<h3>🎬 Netflix & Spotify Clone</h3>
+<p>Responsive UI with smooth interactions using JavaScript.</p>
+</div>
+</div>
+</section>
+
+<section class="fade">
+<h2>Experience</h2>
+<div class="card">
+<h3>AI Annotator – Globsyn Technologies</h3>
+<p>Aug 2025 – Jan 2026</p>
+<p>High-quality data annotation for AI models.</p>
+</div>
+<div class="card">
+<h3>AI/ML Intern – EduSkills</h3>
+<p>May 2023 – July 2023</p>
+<p>Worked on ML workflows & AWS tools.</p>
+</div>
+</section>
+
+<section id="contact" class="fade contact">
+<h2>Contact 📧</h2>
+<div class="card">
+<p><i class="fas fa-envelope"></i>bibhandey2@gmail.com</p>
+<p><i class="fas fa-phone"></i>+91 6289269380</p>
+<p><i class="fas fa-map-marker-alt"></i>Naihati, West Bengal</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Bibhan Dey | Built with ❤️</p>
+</footer>
+
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+faders.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100){el.classList.add('show')}
+})
+})
+</script>
+
+</body>
+</html>
